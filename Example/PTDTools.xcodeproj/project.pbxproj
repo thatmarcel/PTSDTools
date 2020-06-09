@@ -18,9 +18,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		620DDBA3F5F113385D9E8EB5 /* Pods-PTDTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTDTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-PTDTools_Tests/Pods-PTDTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6ACFDDC731EEB5DCD3E85CA8 /* Pods-PTDTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTDTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PTDTools_Tests/Pods-PTDTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		90D5DA7A39B79FE791D2CC62 /* PTDTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PTDTools.podspec; path = ../PTDTools.podspec; sourceTree = "<group>"; };
-		919659FA171268012561CC8C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FEEF5177C4696646ACF88B10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		90D5DA7A39B79FE791D2CC62 /* PTDTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PTDTools.podspec; path = ../PTDTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		919659FA171268012561CC8C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FEEF5177C4696646ACF88B10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,6 @@
 				6ACFDDC731EEB5DCD3E85CA8 /* Pods-PTDTools_Tests.debug.xcconfig */,
 				620DDBA3F5F113385D9E8EB5 /* Pods-PTDTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,12 +130,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3VTN34JZNX;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -147,6 +143,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -332,6 +329,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6ACFDDC731EEB5DCD3E85CA8 /* Pods-PTDTools_Tests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = 3VTN34JZNX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -354,6 +353,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 620DDBA3F5F113385D9E8EB5 /* Pods-PTDTools_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = 3VTN34JZNX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

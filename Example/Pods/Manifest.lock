@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.3.4)
+  - PTDTools (0.1.0)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0)
+  - PTDTools (from `../`)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  PTDTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  PTDTools: cc441c7013bfa8dbb46c9f5400fcf2a2ce3e6d0c
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: c4f2dab901ee3fd006f0417922ed472859c9737f
+
+COCOAPODS: 1.7.5

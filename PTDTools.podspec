@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Patrik Svoboda/PTDTools'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/patrik-svobodik/PTDTools'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Patrik Svoboda' => 'svob.pata@gmail.com' }
-  s.source           = { :git => 'https://github.com/Patrik Svoboda/PTDTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/patrik-svobodik/PTDTools.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/PatrikTheDev'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.tvos.deployment_target = '11.0'
 
   s.source_files = 'PTDTools/Classes/**/*'
   
@@ -37,6 +37,10 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'Foundation'
+  s.dependency 'Cartography'
+  s.ios.dependency 'Haptica'
+  s.ios.dependency 'PanModal'
+  s.tvos.dependency 'TvOSSlider'
+  s.swift_version = "5.2"
 end
