@@ -7,7 +7,7 @@
 
 import Foundation
 
-func configure<T>( _ item: T, config: (inout T) -> ()) -> T {
+public func configure<T>( _ item: T, config: (inout T) -> ()) -> T {
     var item = item
     config(&item)
     return item
