@@ -15,8 +15,8 @@ open class NotificationStore {
         case tintColorChanged = "TintColorChanged"
         case tabBarSettingsChanged = "TabBarSettingsChanged"
         
-        public var notification: Notification { return Notification(name: name) }
-        public var name: Notification.Name { return Notification.Name(self.rawValue) }
+        public var notification: Notification { Notification(name: name) }
+        public var name: Notification.Name { Notification.Name(self.rawValue) }
     }
 
     public static func tintColorChanged() {

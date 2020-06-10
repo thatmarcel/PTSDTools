@@ -39,7 +39,6 @@ open class SliderTableViewCell: TableViewCell {
     
     public let topLabel: UILabel = {
         let label = UILabel()
-        label.text = "ree"
         label.font = .roundedLabel
         return label
     }()
@@ -48,14 +47,14 @@ open class SliderTableViewCell: TableViewCell {
         contentView.addSubviews(topLabel, slider)
         
         constrain(contentView, topLabel, slider) { contentView, topLabel, slider in
-            topLabel.top == contentView.top + 12
-            topLabel.left == contentView.left + 15
-            topLabel.right == contentView.right - 15
+            topLabel.top == contentView.layoutMarginsGuide.top
+            topLabel.left == contentView.layoutMarginsGuide.left
+            topLabel.right == contentView.layoutMarginsGuide.right
             
             slider.top == topLabel.bottom + 10
-            slider.left == contentView.left + 15
-            slider.right == contentView.right - 15
-            slider.bottom == contentView.bottom - 12
+            slider.left == contentView.layoutMarginsGuide.left
+            slider.right == contentView.layoutMarginsGuide.right
+            slider.bottom == contentView.layoutMarginsGuide.bottom
         }
     }
     
