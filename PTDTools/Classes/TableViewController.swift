@@ -52,5 +52,5 @@ open class TableViewController: UITableViewController {
         }
     }
     
-    typealias CellRegistration = [String: AnyClass?]
+    public typealias CellRegistration = [String: AnyClass?]
 }
