@@ -18,7 +18,7 @@ import Haptica
 open class SliderTableViewCell: TableViewCell {
 
     #if !os(tvOS)
-    open let slider = configure(UISlider()) {
+    public let slider = configure(UISlider()) {
         $0.maximumValue = 100
         $0.minimumValue = 0
         $0.tintColor = ColorStore.tintColor

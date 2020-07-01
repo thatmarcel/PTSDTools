@@ -11,10 +11,10 @@ import Cartography
 
 open class DualLabelTableViewCell: TableViewCell {
 
-    open let leftLabel = configure(UILabel()) {
+    public let leftLabel = configure(UILabel()) {
         $0.font = .roundedLabel
     }
-    open let rightLabel = configure(UILabel()) {
+    public let rightLabel = configure(UILabel()) {
         $0.font = .roundedLabel
     }
     
