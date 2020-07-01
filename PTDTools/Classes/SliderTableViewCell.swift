@@ -18,34 +18,27 @@ import Haptica
 open class SliderTableViewCell: TableViewCell {
 
     #if !os(tvOS)
-    public let slider: UISlider = {
-        let slider = UISlider()
-        slider.maximumValue = 100
-        slider.minimumValue = 0
-        slider.tintColor = ColorStore.tintColor
-        slider.addHaptic(.selection, forControlEvents: .touchDown)
-        return slider
-    }()
+    open let slider = configure(UISlider()) {
+        $0.maximumValue = 100
+        $0.minimumValue = 0
+        $0.tintColor = ColorStore.tintColor
+        $0.addHaptic(.selection, forControlEvents: .touchDown)
+    }
     #else
-    public let slider: TvOSSlider = {
-        let slider = TvOSSlider()
-        slider.maximumValue = 100
-        slider.minimumValue = 0
-        slider.stepValue = 10
-        slider.minimumTrackTintColor = ColorStore.tintColor
-        return slider
-    }()
+    public let slider = configure(TvOSSlider()) {
+        $0.maximumValue = 100
+        $0.minimumValue = 0
+        $0.stepValue = 10
+        $0.minimumTrackTintColor = ColorStore.tintColor
+    }
     #endif
     
-    public let topLabel: UILabel = {
-        let label = UILabel()
-        label.font = .roundedLabel
-        return label
-    }()
+    public let topLabel = configure(UILabel()) {
+        $0.font = .roundedLabel
+    }
     
     override open func setupViews() {
         contentView.addSubviews(topLabel, slider)
-        
         constrain(contentView, topLabel, slider) { contentView, topLabel, slider in
             topLabel.top == contentView.layoutMarginsGuide.top
             topLabel.left == contentView.layoutMarginsGuide.left

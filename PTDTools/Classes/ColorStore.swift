@@ -25,32 +25,22 @@ open class ColorStore {
     
     public static func uiColor(_ color: Color) -> UIColor {
         switch color {
-        case .systemOrange:
-            return .systemOrange
-        case .systemRed:
-            return .systemRed
-        case .systemBlue:
-            return .systemBlue
-        case .systemPink:
-            return .systemPink
-        case .label:
-            return CC.label
+        case .systemOrange: return .systemOrange
+        case .systemRed: return .systemRed
+        case .systemBlue: return .systemBlue
+        case .systemPink: return .systemPink
+        case .label: return .label
         }
     }
 
     /// Returns a name for the color to show in the tint picker
     public static func nameForColor(_ color: Color) -> String {
         switch color {
-        case .systemOrange:
-            return "Orange"
-        case .systemRed:
-            return "Red"
-        case .systemBlue:
-            return "Blue"
-        case .systemPink:
-            return "Pink"
-        case .label:
-            return "Text color"
+        case .systemOrange: return "Orange"
+        case .systemRed: return "Red"
+        case .systemBlue: return "Blue"
+        case .systemPink: return "Pink"
+        case .label: return "Text color"
         }
     }
     
@@ -71,6 +61,7 @@ open class ColorStore {
         
         public var id: String { rawValue }
         public var uiColor: UIColor { ColorStore.uiColor(self) }
+        public var name: String { ColorStore.nameForColor(self) }
     }
     
     @objc open func handleTintColorChange() {
@@ -85,20 +76,7 @@ open class ColorStore {
     }
     /// Returns a Color object for a string id
     public static func color(_ id: String) -> Color? {
-        switch id {
-        case Color.systemOrange.id:
-            return Color.systemOrange
-        case Color.systemRed.id:
-            return Color.systemRed
-        case Color.systemBlue.id:
-            return Color.systemBlue
-        case Color.systemPink.id:
-            return Color.systemPink
-        case Color.label.id:
-            return Color.label
-        default:
-            return nil
-        }
+        Color(rawValue: id)
     }
     public static func uiColor(_ id: String) -> UIColor? {
         guard let color = color(id) else { return nil }

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 open class AnimationConstants {
-    public static var length: TimeInterval = 0.3
     public static var short: TimeInterval = 0.2
+    public static var standard: TimeInterval = 0.3
+    public static var long: TimeInterval = 0.5
 }

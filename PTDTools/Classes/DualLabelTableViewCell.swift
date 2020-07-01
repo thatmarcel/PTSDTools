@@ -11,16 +11,12 @@ import Cartography
 
 open class DualLabelTableViewCell: TableViewCell {
 
-    public let leftLabel: UILabel = {
-        let label = UILabel()
-        label.font = .roundedLabel
-        return label
-    }()
-    public let rightLabel: UILabel = {
-        let label = UILabel()
-        label.font = .roundedLabel
-        return label
-    }()
+    open let leftLabel = configure(UILabel()) {
+        $0.font = .roundedLabel
+    }
+    open let rightLabel = configure(UILabel()) {
+        $0.font = .roundedLabel
+    }
     
     private let stack = UIStackView()
     

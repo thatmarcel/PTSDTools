@@ -126,7 +126,6 @@
 		E4B329CE240EC4D4001D8FC7 /* NotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B329C9240EC4D3001D8FC7 /* NotificationStore.swift */; };
 		E4B329CF240EC4D4001D8FC7 /* ReloadableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B329CA240EC4D3001D8FC7 /* ReloadableCell.swift */; };
 		E4B329D0240EC4D4001D8FC7 /* Tintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B329CB240EC4D3001D8FC7 /* Tintable.swift */; };
-		E4B329D1240EC4D4001D8FC7 /* ColorCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B329CC240EC4D3001D8FC7 /* ColorCompatibility.swift */; };
 		E4B329D2240EC4D4001D8FC7 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B329CD240EC4D4001D8FC7 /* Animations.swift */; };
 		E594306BF52C899BCE23A4BA56CD0DD0 /* CwlPreconditionTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D88E4FE24FF162A41867BD5C14CB29 /* CwlPreconditionTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6C11C009FC4EEB972E5175E3D2EDCA5 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9DA7DF96D998195C1DD500F02A960F /* ThrowError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -309,7 +308,6 @@
 		E4B329C9240EC4D3001D8FC7 /* NotificationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationStore.swift; path = PTDTools/Classes/NotificationStore.swift; sourceTree = "<group>"; };
 		E4B329CA240EC4D3001D8FC7 /* ReloadableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReloadableCell.swift; path = PTDTools/Classes/ReloadableCell.swift; sourceTree = "<group>"; };
 		E4B329CB240EC4D3001D8FC7 /* Tintable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tintable.swift; path = PTDTools/Classes/Tintable.swift; sourceTree = "<group>"; };
-		E4B329CC240EC4D3001D8FC7 /* ColorCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorCompatibility.swift; path = PTDTools/Classes/ColorCompatibility.swift; sourceTree = "<group>"; };
 		E4B329CD240EC4D4001D8FC7 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animations.swift; path = PTDTools/Classes/Animations.swift; sourceTree = "<group>"; };
 		E69B7FEBF183352C4C3269314D04FB30 /* PTDTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTDTools.xcconfig; sourceTree = "<group>"; };
 		E6A33CF7F8C8368A54CDE800EAA3175B /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Sources/Quick/World.swift; sourceTree = "<group>"; };
@@ -576,7 +574,6 @@
 			children = (
 				E4B329C7240DB410001D8FC7 /* ColorStore.swift */,
 				E4B329CD240EC4D4001D8FC7 /* Animations.swift */,
-				E4B329CC240EC4D3001D8FC7 /* ColorCompatibility.swift */,
 				E4B329C9240EC4D3001D8FC7 /* NotificationStore.swift */,
 				E4B329CA240EC4D3001D8FC7 /* ReloadableCell.swift */,
 				E4B329CB240EC4D3001D8FC7 /* Tintable.swift */,
@@ -978,7 +975,6 @@
 				D883C7CC049323F9F343932C9477896E /* PTDTools-dummy.m in Sources */,
 				E4B329BE240DB19F001D8FC7 /* TableViewCellWithSwitch.swift in Sources */,
 				E4B329D2240EC4D4001D8FC7 /* Animations.swift in Sources */,
-				E4B329D1240EC4D4001D8FC7 /* ColorCompatibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

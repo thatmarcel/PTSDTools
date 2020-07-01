@@ -6,8 +6,6 @@
 //  Copyright © 2020 Patrik Svoboda. All rights reserved.
 //
 
-import Foundation
-
 public protocol ReloadableCell {
     func reloadData()
 }
