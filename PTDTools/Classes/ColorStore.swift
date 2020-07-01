@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
-open class ColorStore {
+open class ColorStore: ObservableObject {
     public static var shared = ColorStore()
     
     public init() {
