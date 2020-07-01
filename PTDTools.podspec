@@ -27,8 +27,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/patrik-svobodik/PTDTools.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/PatrikTheDev'
 
-  s.ios.deployment_target = '10.0'
-  s.tvos.deployment_target = '11.0'
+  s.ios.deployment_target = '14.0'
+  s.tvos.deployment_target = '14.0'
 
   s.source_files = 'PTDTools/Classes/**/*'
   
