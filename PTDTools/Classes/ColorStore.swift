@@ -47,6 +47,7 @@ open class ColorStore: ObservableObject {
     
     // MARK: Shadow properties
     @UserDefault("TintColorId", defaultValue: Color.systemOrange.id)
+    @Published
     open var _tintColorId: String {
         didSet {
             NotificationStore.tintColorChanged()
