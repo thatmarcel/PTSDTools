@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'PTDTools'
+  s.name             = 'PTSDTools'
   s.version          = '0.1.0'
   s.summary          = 'A short description of PTDTools.'
 
@@ -21,19 +21,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/patrik-svobodik/PTDTools'
+  s.homepage         = 'https://github.com/thatmarcel/PTSDTools'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Patrik Svoboda' => 'svob.pata@gmail.com' }
-  s.source           = { :git => 'https://github.com/patrik-svobodik/PTDTools.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/thatmarcel/PTSDTools.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/PatrikTheDev'
 
   s.ios.deployment_target = '14.0'
   s.tvos.deployment_target = '14.0'
 
-  s.source_files = 'PTDTools/Classes/**/*'
+  s.source_files = 'PTSDTools/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'PTDTools' => ['PTDTools/Assets/*.png']
+  #   'PTDTools' => ['PTSDTools/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
