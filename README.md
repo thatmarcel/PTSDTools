@@ -1,4 +1,4 @@
-# PTDTools
+# PTSDTools
 
 [![CI Status](https://img.shields.io/travis/Patrik Svoboda/PTDTools.svg?style=flat)](https://travis-ci.org/Patrik Svoboda/PTDTools)
 [![Version](https://img.shields.io/cocoapods/v/PTDTools.svg?style=flat)](https://cocoapods.org/pods/PTDTools)
@@ -17,7 +17,7 @@ PTDTools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'PTDTools'
+pod 'PTSDTools', :git => 'https://github.com/thatmarcel/PTSDTools'
 ```
 
 ## Author
