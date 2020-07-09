@@ -26,4 +26,4 @@ Patrik Svoboda, svob.pata@gmail.com
 
 ## License
 
-PTDTools is available under the MIT license. See the LICENSE file for more info.
+PTSDTools is available under the MIT license. See the LICENSE file for more info.
